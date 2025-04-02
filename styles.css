@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --color1:#FF9100;
+    --color4:black;
+    --color3:#FFFBE6;
+    --color2:black;
+}
+
+
+body{
+    height:screen;
+    background-color: var(--color2);
+}
+.main-box{
+   padding:20px 10px;
+}
+.button1{
+    cursor: pointer;
+    transition: .2s;
+    padding: 12px 24px;
+    background-image: linear-gradient(to top,var(--color1),var(--color1),var(--color1),var(--color3));
+}
+.button1:active{
+    transform: scale(1.2);
+}
+.button1:hover{
+    box-shadow: 1px 0px 10px .2px white;
+
+}
+.logo{
+    transition: 2s;
+}
+.logo:hover{
+    transition: 2s;
+    transform:scale(1.1)
+}
+.text-color1{
+    text-shadow: 2px 2px 4px  var(--color3);
+    color: var(--color1);
+}
+.text-color3{
+    color: var(--color3);
+}
+.text-color2{
+    color: var(--color3);
+}
+.text-color4{
+    color: var(--color4);
+}
+.name{
+    text-shadow: 2px 2px 4px var(--color3);
+    color: black;
+}
+.join-box{
+    
+   animation:join_box 2s linear infinite; 
+}
+/*footer box*/
+.footer-box{
+    height: auto;
+    background-color: var(--color1);
+    box-shadow: 1px 0px 10px .3px var(--color3);
+    padding: 10px;
+}
+
+@keyframes join_box {
+    0%{
+transform: scale(.9);
+    }
+    33%{
+
+        transform: scale(1.1);
+    }
+    66%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.9);
+    }
+}
+ .name{
+        text-align: center;
+    }
+
+
+
+
+    @media (max-width:800px) {
+       .h1{
+        font-size:large;
+       }
+       .h2{
+font-size: large;
+       }
+       .h3{
+       font-size: medium;
+       }
+       .h4{
+font-size: small;
+       }
+       .logo{
+        width: 150px;
+        height: auto;
+       }
+.main-box{
+    height: auto;
+}
+    }
+    /*for laptop screen*/
+    @media (min-width:800px) {
+        .h1{
+         font-size:xx-large;
+        }
+        .name{
+              font-size: 40px;
+        }
+        .h2{
+ font-size:x-large;
+        }
+        .h3{
+        font-size:large;
+        }
+        .h4{
+ font-size: small;
+        }
+        .logo{
+         width:130px;
+         height:130px;
+        }
+ 
+     }
+
+
+     
+  /* CSS */
+  .button-82-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-82-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  .button-82-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+      to left,
+      hsl(340deg 100% 16%) 0%,
+      hsl(340deg 100% 32%) 8%,
+      hsl(340deg 100% 32%) 92%,
+      hsl(340deg 100% 16%) 100%
+    );
+  }
+  
+  .button-82-front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  @media (min-width: 768px) {
+    .button-82-front {
+      font-size: 1.25rem;
+      padding: 12px 42px;
+    }
+  }
+  
+  .button-82-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+  }
+  
+  .button-82-pushable:hover .button-82-front {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-82-pushable:active .button-82-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .button-82-pushable:hover .button-82-shadow {
+    transform: translateY(4px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-82-pushable:active .button-82-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .button-82-pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+
+  * {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
